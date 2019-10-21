@@ -24,7 +24,7 @@ public class FileWorker {
 	
 	public void checkFileSize(File file) throws FileSizeException {
 		try (FileInputStream fileInputStream = new FileInputStream(file);){
-			if (fileInputStream.available() > 50) throw new FileSizeException("размер файла слишком большой");
+			if (fileInputStream.available() > 50) throw new FileSizeException("СЃР»РёС€РєРѕРј Р±РѕР»СЊС€РѕР№ СЂР°Р·РјРµСЂ С„Р°Р№Р»Р°");
 		} catch (FileNotFoundException e) {
 			System.out.println(e.getMessage());
 		} catch (IOException e) {
@@ -59,7 +59,7 @@ public class FileWorker {
 							triangleMaxArea.getArea() < triangle.calcArea())
 						triangleMaxArea = triangle;
 				}catch (Exception e) {
-					System.out.println("строка " + lineNumber + " содержит неверные координаты. Этот треугольник не будет учтен.");
+					System.out.println("Р’ СЃС‚СЂРѕРєРµ " + lineNumber + " СѓРєР°Р·Р°РЅС‹ РЅРµ РєРѕСЂСЂРµРєС‚РЅС‹Рµ РєРѕРѕСЂРґРёРЅР°С‚С‹.");
 				}
 				lineNumber++;
 			}
